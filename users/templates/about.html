@@ -1,0 +1,94 @@
+{% load static tailwind_tags %}<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		{% tailwind_css %}
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="{% static 'css/style.css' %}" />
+	</head>
+	<body class="bg">
+		{% include 'includes/nav.html' %}
+
+		<section class="bg-blue-950/95 h-full">
+			<div class="gap-16 items-center py-32 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-40 lg:px-6">
+				<div class="font-light text-white sm:text-lg">
+					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-200">Marjouiey C. Vicente - Developer</h2>
+					<br />
+					<p class="mb-4 font-bold mt-4">Personal Information</p>
+					<p>
+						Address: Biu os Vincenzo Sagun Zamboanga Del Sur
+						<br />
+						Date of Birth: July 19, 2002
+						<br />
+						Email: vicentemarjouiey@gmail.com
+						<br />
+						Phone #: 09384362375
+						<br />
+						Civil Status: Single
+					</p>
+					<br />
+					<br />
+					<p class="mb-4 font-bold mt-4">Educational Background</p>
+					<p>
+						Elementary: Biu os Elementary School SY(2014-2015)
+						<br />
+						Secondary: Judge Edmundo Pinga National High School SY(2014-2015)
+						<br />
+						College: Josefina Herrera Cerilles State College
+					</p>
+					<br />
+					<br />
+					<p>
+						The JEPNHS e-learning website provides easy access to educational materials and interactive lessons for
+						online learners. The e-learning website features a diverse range of courses catering to various subjects and
+						skill levels. Users can engage in interactive lessons, quizzes, and discussions to enhance their
+						understanding. With flexible scheduling and accessible resources, the platform fosters convenient and
+						effective online learning experiences.
+					</p>
+					<br />
+					<br />
+					<br />
+					<p>
+						<b>Disclaimer</b>
+						<br />
+						<br />
+						JEPNHS e_Learning project functions as a practical exercise for applying the principles and abilities
+						acquired in the IT310 Web System and Technology course. It involves utilizing web development tools like
+						HTML, CSS, and JavaScript to construct and execute the platform. This hands-on approach provides valuable
+						comprehension of the developmental stages of web-based systems. Please note that all content presented
+						within this project is strictly intended for educational purposes. While endeavor for accuracy, it is
+						imperative to acknowledge that it does not constitute professional guidance or serve as a replacement for
+						formal education.
+					</p>
+					<br />
+					<br />
+					<br />
+					<p class="font-bold">Reference:</p>
+					<a href="https://www.elearninglearning.com/forum/" target="_blank" class="text-blue-200 underline">https://www.elearninglearning.com/forum/</a>
+				</div>
+				<div class="mt-8">
+					<img
+						class="w-full rounded-lg"
+						src="{% static 'img/me.jpg' %}"
+						alt="office content 1" />
+				</div>
+			</div>
+		</section>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+	</body>
+</html>
